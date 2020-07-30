@@ -16,9 +16,9 @@ def sithScore(name, job, likesCats, favouriteLang):
 
     if favouriteLang in ('Python', 'Go', 'Rust', 'Haskell', 'Lisp'):
         score /= 5
-    else if favouriteLang in ('C', 'C++', 'D'):
+    elif favouriteLang in ('C', 'C++', 'D'):
         score /= 2
-    else if favouriteLang in ('Perl', 'Java'):
+    elif favouriteLang in ('Perl', 'Java'):
         score *= 2
     else:
         score *= 4
