@@ -1,0 +1,30 @@
+hubpackage: 1.0.0
+name: sith-detector
+programs:
+  sith_detector:
+    type: python
+    label: sith_detector
+    parameters:
+      Name:
+        datatype: string
+        label: Name
+        required: true
+      JobTitle:
+        datatype: string
+        label: JobTitle
+        required: true
+      LikesCats:
+        datatype: bool
+        label: LikesCats
+        required: true
+      FavouriteLanguage:
+        datatype: string
+        label: FavouriteLanguage
+        required: true
+    programFile: detector.py
+    parameterStyle: normal
+    results:
+      result:
+        resultType: object
+        resultObjectName: result
+        resultFormat: json
